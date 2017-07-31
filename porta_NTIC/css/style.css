@@ -1,0 +1,88 @@
+body{
+	margin-top: 150px;
+}
+
+
+/*** HEADER ***/
+
+#header-navb {
+	background-color: #000000;
+	border-radius: 0;
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+
+
+.navbar-brand {
+	padding-top: 10px;
+	height: auto;
+}
+
+.navbar-brand h1 {
+	text-align: left;
+	text-transform: uppercase;
+	color: black;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -25px;  
+  border: 1px solid black;
+
+}
+
+#nav-list{
+	margin-top: 10px
+	width: 100%;
+}
+
+#nav-list1 a{
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+#nav-list1 a:hover{
+	background-color:  #FFFFFF;
+}
+
+#collapsable-nav1{
+	clear: both;
+	background-color: #CCCCAA;
+}
+
+/*** Main Page ***/
+
+#main-page h2{
+	color: black;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #FFAAFF;
+	margin-bottom: 30px;
+}
+
+#large-text {
+	background-color: #CCCCAA;
+	padding: 5px;
+	margin-bottom: 20px;
+
+
+
+}
+
+#large-text h3{
+	color: black;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #DDDDFF;
+	margin-bottom: 10px;
+}
+
+.row{
+	margin-left: 15px;
+	margin-right: 15px;
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IFB - Gama</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+  </head>
+<body>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+
+ 
+
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <!--<div id="logo-img" alt="Logo image"></div>-->
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Instituto Federal de Brasília</h1></a>  <span>Campus Gama </span>
+     
+          </div>
+
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span>Página Inicial</a>
+            </li>
+            <li id="navAdmButton">
+              <a  href="http://www.ifb.edu.br/gama/estrutura-administrativa" class="external">
+                <span class="glyphicon glyphicon-briefcase"></span><br class="hidden-xs">Estrutura Administrativa</a>
+            </li>
+            <li id="navCursoButton">
+              <a href="http://www.ifb.edu.br/gama/cursos">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Cursos</a>
+            </li>
+           
+            <li id="phone" class="hidden-xs">
+              <a href="tel:06121032250">
+                <span>2103-2250</span></a><div>Telefone do Campus Gama</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:06121032250">
+    <span class="glyphicon glyphicon-earphone"></span>
+     (61) 2103-2250
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs"> Telefone</div>
+
+  <div id="main-content" class="container"> <!--Conteudo principal-->
+  	
+<div id = "jumbo-tile">
+      <div class="jumbotron ">
+        <a href="http://www.ifb.edu.br/gama">
+        <img src="images/gama.jpg" alt="Reitoria do Instituto Federal de Brasília" class="img-responsive ">
+        <span>Bem-Vindo ao IFB - Campus Gama</span>   
+        </a>  
+      </div>
+    </div>  
+      
+    <div class= "col-md-6 col-sm-6 col-xs-6">
+      <a href="http://www.ifb.edu.br/gama/estrutura-administrativa">
+      <div id="img-tile">
+       
+        <img src = "images/adm.jpg" alt="Conheça nossa estrutura administrativa">
+        <span>Estrutura Administrativa</span>
+       
+      </div>
+       </a>
+    </div>
+
+   <div class= "col-md-6 col-sm-6 col-xs-6">
+      <a href="http://www.ifb.edu.br/gama/cursos">
+      <div id="img-tile">
+       <img src = "images/livros.jpg" alt="Conheça os cursos disponíveis neste campus">
+        <span>Cursos</span>
+      </div>
+      </a>
+    </div>
+
+
+
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <!-- <a href="https://goo.gl/maps/ixvS9JyQYQx" target="_blank"> -->
+          <div id="map-tile">
+          	<div id="mapid"></div>
+            <span>Mapa</span>
+          </div>
+        <!-- </a>-->
+      </div>
+    </div><!-- End of #home-tiles -->
+
+
+
+
+  </div> <!--fim do conteudo principal -->
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Horário de Funcionamento:</span><br>
+          De segunda a sexta-feira, das 8h às 12h e das 14h às 18h
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Endereço</span><br>
+         Lote 01, DF 480, Setor de Múltiplas Atividades<br>
+          Gama/DF - CEP: 72429-005
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+         <p>"Educação acima de tudo!"</p> <br>
+         <p>"Boa opção de ensino!"</p> 
+        </section>
+      </div>
+      <div class="text-center">Instituto Federal de Brasília - Núcleo de Técnologia da Informação e Comunicação (NTIC)</div>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

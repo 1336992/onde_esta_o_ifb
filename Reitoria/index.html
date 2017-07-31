@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IFB - Reitoria</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+  </head>
+<body>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+
+
+
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <!--<div id="logo-img" alt="Logo image"></div>-->
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Instituto Federal de Brasília</h1></a>  <span>Campus Brasília - Reitoria </span>
+     
+          </div>
+
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span>Página Inicial</a>
+            </li>
+            <li id="navAdmButton">
+              <a  href="http://www.ifb.edu.br/reitori/estrutura-administrativa" class="external">
+                <span class="glyphicon glyphicon-briefcase"></span><br class="hidden-xs">Estrutura Administrativa</a>
+            </li>
+            <li id="navCursoButton">
+              <a href="http://www.ifb.edu.br/brasilia/cursos">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Cursos</a>
+            </li>
+           
+            <li id="phone" class="hidden-xs">
+              <a href="tel:06121032154">
+                <span>2103-2154</span></a><div>Telefone da Reitoria</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:06121032154">
+    <span class="glyphicon glyphicon-earphone"></span>
+     (61) 2103-2154
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs"> Telefone</div>
+
+  <div id="main-content" class="container"> <!--Conteudo principal-->
+  	
+<div id = "jumbo-tile">
+      <div class="jumbotron ">
+        <a href="http://www.ifb.edu.br/brasilia">
+        <img src="images/reitoria-598.jpg" alt="Reitoria do Instituto Federal de Brasília" class="img-responsive ">
+        <span>Bem-Vindo ao IFB - Campus Brasília - Reitoria</span>   
+        </a>  
+      </div>
+    </div>  
+      
+    <div class= "col-md-6 col-sm-6 col-xs-6">
+      <a href="http://www.ifb.edu.br/reitori/estrutura-administrativa">
+      <div id="img-tile">
+       
+        <img src = "images/adm.jpg" alt="Conheça nossa estrutura administrativa">
+        <span>Estrutura Administrativa</span>
+       
+      </div>
+       </a>
+    </div>
+
+   <div class= "col-md-6 col-sm-6 col-xs-6">
+      <a href="http://www.ifb.edu.br/brasilia/cursos">
+      <div id="img-tile">
+       <img src = "images/livros.jpg" alt="Conheça os cursos disponíveis neste campus">
+        <span>Cursos</span>
+      </div>
+      </a>
+    </div>
+
+
+<!-- Zoomable image by openSeadragon1 -->
+	<div id= "mpInt"  class="col-md-12 col-sm-12 col-xs-12">
+		<div id= "mapaInterno">	
+      <div id="openseadragon1" style="width: 100%; height: 300px;"></div>
+			<script src="openseadragon/openseadragon.min.js"></script>
+			<script type="text/javascript">
+			    var viewer = OpenSeadragon({
+			        id: "openseadragon1",
+			        prefixUrl: "openseadragon/images/",
+              sequenceMode: true,
+              tileSources: [
+                "images/1andar_reitoria.dzi",
+                "images/2andar_reitoria.dzi",
+                "images/3andar_reitoria.dzi"
+              ],
+              minZoomLevel: 1,
+			        defaultZoomLevel: 2.5,
+           
+			    });
+			 	
+			    viewer.addHandler('open', function(){
+
+  					var start_point = new OpenSeadragon.Rect(0,0.12,0.3,0.18);
+
+            switch(viewer.currentPage()){
+              case 0:
+                viewer.viewport.fitBounds(start_point, true);
+                break;
+              case 1: 
+                start_point = new OpenSeadragon.Rect(0.19,0.08,0.4,0.28); //sry :(
+                viewer.viewport.fitBounds(start_point, true);
+                break;
+              case 2: start_point = new OpenSeadragon.Rect(0.12,0.06,0.4,0.23); //sry :(
+                viewer.viewport.fitBounds(start_point, true);
+                break;
+            }
+
+            //console.log(viewer.currentPage());
+			 	    var andar = document.getElementById("andar_mapa");
+            andar.innerHTML = "Mapa Interno - "+ (viewer.currentPage()+1)+ " andar";
+			    });
+
+
+
+			</script>
+       <span id="andar_mapa">Mapa Interno - 1 Andar</span>
+    </div>
+	</div>
+
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <!-- <a href="https://goo.gl/maps/ixvS9JyQYQx" target="_blank"> -->
+        <div id="map-tile">
+        	<div id="mapid"></div>
+          <span>Mapa</span>
+        </div>
+      <!-- </a>-->
+    </div>
+
+
+
+
+</div><!-- End of #home-tiles -->
+
+
+	
+
+
+</div> <!--fim do conteudo principal -->
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Horário de Funcionamento:</span><br>
+          De segunda a sexta-feira, das 8h às 12h e das 14h às 18h.
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Endereço</span><br>
+          SGAN Quadra 610, módulos D, E, F e G<br>
+          Brasília/DF - CEP: 70.860-100
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"Ótimo Campus e com excelente estrutura."</p>
+          <p>"Muito bom o espaço e com muitos cursos técnicos de qualidade"</p>
+        </section>
+      </div>
+      <div class="text-center">Instituto Federal de Brasília - Núcleo de Técnologia da Informação e Comunicação (NTIC)</div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
