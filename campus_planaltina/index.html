@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" />
   </head>
 <body>
 
@@ -108,11 +108,29 @@
       <div class="col-md-12 col-sm-12 col-xs-12">
         <!-- <a href="https://goo.gl/maps/ixvS9JyQYQx" target="_blank"> -->
           <div id="map-tile">
-          	<div id="mapid"></div>
+          	<div id="map"></div>
             <span>Mapa</span>
           </div>
         <!-- </a>-->
       </div>
+
+
+<!-- Comentarios-->
+    <h3>Deixe sua avaliação sobre o local!!!</h3>
+    <div id="fb-root" ></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+              fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+  <div class="col-md-12 col-sm-12 col-xs-12" style="background: rgb(255,255,255);">
+  <div class="fb-comments" data-href="https://www.facebook.com/CampusPlanaltina/"  data-numposts="3"></div></div>
+  <!--Fim comentarios-->
+
     </div><!-- End of #home-tiles -->
 
 
@@ -123,23 +141,19 @@
   <footer class="panel-footer">
     <div class="container">
       <div class="row">
-        <section id="hours" class="col-sm-4">
+        <section id="hours" class="col-sm-6">
           <span>Horário de Funcionamento:</span><br>
           De segunda a sexta-feira, das 8h às 12h e das 14h às 18h
           <hr class="visible-xs">
         </section>
-        <section id="address" class="col-sm-4">
+        <section id="address" class="col-sm-6">
           <span>Endereço</span><br>
           Rodovia DF-128, Km 21, Zona Rural de Planaltina<br>
           Planaltina/DF - CEP: 73380-900 
           <hr class="visible-xs">
         </section>
-        <section id="testimonials" class="col-sm-4">
-         <p>"Bons Cursos!"</p> <br>
-          <p>"Lindo!"</p>
-        </section>
       </div>
-      <div class="text-center">Instituto Federal de Brasília - Núcleo de Técnologia da Informação e Comunicação (NTIC)</div>
+      <div class="text-center">Instituto Federal de Brasília - Diretoria de Técnologia da Informação e Comunicação (DTIC)</div>
     </div>
   </footer>
 
@@ -147,7 +161,7 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/ajax-utils.js"></script>
-  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js"></script>
   <script src="js/script.js"></script>
 
 </body>

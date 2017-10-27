@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IFB - Porta DTIC</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" />
   </head>
 <body>
 
@@ -23,13 +24,13 @@
         <div class="navbar-header">
         
           <div class="navbar-brand">
-            <a href="index.html"><h1>Instituto Federal de Brasília</h1></a>  <span>Diretoria de Tecnologia da Informação - DTIC </span>
+            <a href="index.html"><h1>Instituto Federal de Brasília</h1></a>  <span class="dirName">Diretoria de Tecnologia da Informação - <span class="sigla">DTIC</span> </span>
      
           </div>
 
            <div id="phone_header" class="hidden-xs">
 			    <a class="btn" href="tel:06121032129">
-			    <span class="glyphicon glyphicon-earphone"></span>
+			    <span class="glyphicon glyphicon-earphone tel"></span>
 			     (61) 2103-2129
 			    </a>
   		   </div>
@@ -43,11 +44,11 @@
 
   <div id="call-btn" class="visible-xs">
     <a class="btn" href="tel:06121032129">
-    <span class="glyphicon glyphicon-earphone"></span>
+    <span class="glyphicon glyphicon-earphone tel"></span>
      (61) 2103-2129
     </a>
   </div>
-  <div id="xs-deliver" class="text-center visible-xs"> Telefone do DTIC</div>
+  <div id="xs-deliver" class="text-center visible-xs"> Telefone do <span class="sigla">DTIC</span></div>
 
 
 
@@ -55,135 +56,101 @@
 <!------------------------------------------------------------------------>
 <div id="main-content" class="container"> <!--Conteudo principal-->
   	
+    <div class="section">
+            <div class="container">
+                              <div class="row">
 
-	<div id = "jumbo-tile">
-	      <div class="jumbotron ">
-	        <a href="http://www.ifb.edu.br/brasilia">
-	        <img src="images/placa_porta_ntic.jpg" alt="DTIC" class="img-responsive">
-	        <span>Diretoria de Tecnologia da Informação - DTIC</span>   
-	        </a>  
-	      </div>
-	</div>  
+                    <div class="col-xs-3" id="part-white">
+                      <div class="center">
+                      <img src="images/icon_ifb.png" id="img-icon">
+                      </div>
+                      <div id="number">
+                      <h5><b class="number">106</b></h5>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-9" id="part-green">
+                        <h1> <b><center><span class="dirName">Diretoria de Tecnologia da Informação e Comunicação</span> - <span>DTIC</span></center></b></h1>
+                    </div>
+                    </div>
+
+            </div>
+    </div>
 	
 
 	<div id = "horario" class= "col-xs-12 text-center">
 		<span>Horário de Funcionamento</span><br>
-		De segunda a sexta-feira, das 7h às 20h
+		<span class = "schedule">De segunda a sexta-feira, das 7h às 20h</span>
 	</div> 
 
 
   	<div id= "pessoas" class = "col-xs-12">
-  		<div class= "col-md-12 col-sm-12 col-xs-12">
-  		Responsáveis pelo DTIC:
-  		</div>
+		<div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center text-primary sigla">DTIC</h1>
+                        <p class="text-center">Responsáveis</p>
+                    </div>
+                </div>
+                <div class="row responsaveis">
+                    <div class="col-md-4">
+                        <img src="images/anderson.jpg" alt="Conheça o DTIC" 
+                        class="img-quadrata center-block" >
+                        <h4 class="text-center"> Diretor do DTIC </h4>
+                        <h3 class="text-center" >Anderson da Silva Costa
+                        <br/>
+                        <small> Diretor</small>
+						<br/>
+                        <small>	Email: <a href="mailto:anderson.costa@ifb.edu.br"> anderson.costa@ifb.edu.br </small>
+                        <br/>
+                        <small> Telefone: <a href="tel:06121032130">  <span class="glyphicon glyphicon-earphone"></span> 2103-2130</a>	</small>
+                        </h3>
+                    </div>
+                    <div class="col-md-4">	       
+                     <img src = "images/joaojunior.jpg" alt="Conheça mais sobre a cordenação de desenvolvimento de software" class="img-quadrata center-block">
+                     <h4 class="text-center"> Desenvolvimento de Software</h4>
+                        <h3 class="text-center" >
+                        João Bezerra Júnior
+                        <br/>
+                        <small> Coordenador </small>
+						<br/>
+                        <small>	Email:   <a href="mailto:joao.junior@ifb.edu.br"> joao.junior@ifb.edu.br </small>
+                        <br/>
+                        <small> Telefone: <a href="tel:06121032157">  <span class="glyphicon glyphicon-earphone"></span> 2103-2157 </a>	</small>
+                        </h3>                    
+                    </div>
+                    <div class="col-md-4">
+                        <img src = "images/edim.jpg" alt="Conheça os cursos disponíveis neste campus" 
+                        class="img-quadrata center-block" >
+                        <h4 class="text-center">Infraestrutura e redes</h4>
+                        <h3 class="text-center" >Edimária Cerqueira Rodrigues Lamounier
+                        <br/>
+                        <small> Coordenadora</small>
+						<br/>
+                        <small>	 Email:  <a href="mailto:edimaria.lamounier@ifb.edu.br"> edimaria.lamounier@ifb.edu.br </small>
+                        <br/>
+                        <small> Telefone: <a href="tel:06121032159">  <span class="glyphicon glyphicon-earphone"></span> 2103-2159 </a>	</small>
+                        </h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img src = "images/ivone.jpg" alt="Parte Administrativa do Instituto" class="img-quadrata center-block" >
+                        <h4 class="text-center">Parte Administrativa </h4>
+                        <h3 class="text-center" >Ivone Maria
+                        <br/>
+                        <small> Responsável</small>
+						<br/>
+                        <small> Email: <a href="mailto:ivone.perosa@ifb.edu.br"> ivone.perosa@ifb.edu.br</small>
+                        <br/>
+                        <small> Telefone: <a href="tel:06121032129">  <span class="glyphicon glyphicon-earphone"></span>  2103-2129 </a>	</small>
+                        </h3>
+                    </div>
 
-	    <div class= "col-md-3 col-sm-3 col-xs-5">
-	      <a href="http://ntic.ifb.edu.br/">
-	      <div id="img-tile">
-	       <img src = "images/anderson.jpg" alt="Conheça o DTIC">
-	        <span>Diretor do DTIC</span>
-	      </div>
-	      </a>
-	   </div>
+                </div>
+            </div>
+        </div>
 
-		<div class= "col-md-3 col-sm-3 col-xs-7">
-	    	<div id="text-tile">
-	    	   <p> Diretor: Anderson da Silva Costa </p>
-	    	   <p> Email:  <a href="mailto:anderson.costa@ifb.edu.br"> anderson.costa@ifb.edu.br   </p>
-	    	   <p> Telefone: <a href="tel:06121032130">  <span class="glyphicon glyphicon-earphone"></span> 2103-2130</a> 
-
-	    	</div>
-
-	    </div>
-
-
-	    <div class= "col-md-3 col-sm-3 col-xs-5">
-	      <a href="http://ntic.ifb.edu.br/2013-10-27-00-11-04">
-	      <div id="img-tile">
-	       
-	        <img src = "images/joaojunior.jpg" alt="Conheça mais sobre a cordenação de desenvolvimento de software">
-	        <span>Desenvolvimento de Software</span>
-	       
-	      </div>
-	       </a>
-	    </div>
-
-
-	    <div class= "col-md-3 col-sm-3 col-xs-7">
-	    	<div id="text-tile">
-	    	   <p> Coordenador: João Bezerra Júnior</p>
-	    	   <p> Email:  <a href="mailto:joao.junior@ifb.edu.br"> joao.junior@ifb.edu.br</p>
-	    	   <p> Telefone: <a href="tel:06121032157">  <span class="glyphicon glyphicon-earphone"></span> 2103-2157 </a></p>
-
-	    	</div>
-
-	    </div>
-
-
-
-
-	    <div class= "col-md-3 col-sm-3 col-xs-5">
-	      <a href="http://ntic.ifb.edu.br/2013-10-27-00-11-5">
-	      <div id="img-tile">
-	       <img src = "images/edim.jpg" alt="Conheça os cursos disponíveis neste campus">
-	        <span>Infraestrutura e redes</span>
-	      </div>
-	      </a>
-	   </div>
-
-	   <div class= "col-md-3 col-sm-3 col-xs-7">
-	    	<div id="text-tile">
-	    	   <p> Coordenador: Edimária Cerqueira Rodrigues Lamounier</p>
-	    	   <p> Email:  <a href="mailto:edimaria.lamounier@ifb.edu.br"> edimaria.lamounier@ifb.edu.br</p>
-	    	   <p> Telefone: <a href="tel:06121032159">  <span class="glyphicon glyphicon-earphone"></span> 2103-2159 </a></p>
-
-	    	</div>
-
-	    </div>
-
-		<div class= "col-md-3 col-sm-3 col-xs-5">
-	      <a href="http://ntic.ifb.edu.br/">
-	      <div id="img-tile">
-	       <img src = "images/ivone.jpg" alt="Parte Administrativa do Instituto">
-	        <span>Parte Administrativa</span>
-	      </div>
-	      </a>
-	   	</div>
-
-
-
-	   	<div class= "col-md-3 col-sm-3 col-xs-7">
-	    	<div id="text-tile">
-	    	   <p> Responsável: Ivone Maria</p>
-	    	   <p> Email: <a href="mailto:ivone.perosa@ifb.edu.br"> ivone.perosa@ifb.edu.br  </p>
-	    	   <p> Telefone: <a href="tel:06121032129">  <span class="glyphicon glyphicon-earphone"></span>  2103-2129 </a></p>
-
-	    	</div>
-	    </div>
-
-
-
-		<div class= "col-md-3 col-sm-3 col-xs-5">
-	      <a href="http://ntic.ifb.edu.br/">
-	      <div id="img-tile">
-	       <img src = "images/danielCoelho.jpg" alt="Conheça a governança de TI">
-	        <span>Governança de TI</span>
-	      </div>
-	      </a>
-	   	</div>
-
-
-
-	   	<div class= "col-md-3 col-sm-3 col-xs-7">
-	    	<div id="text-tile" >
-	    	   <p> Responsáveis: Daniel Coelho e Everson da Conceição Badaró</p>
-	    	   <p> Email:  <a href="mailto:daniel.coelho@ifb.edu.br"> daniel.coelho@ifb.edu.br e <a href="mailto:everson.badaro@ifb.edu.br"> everson.badaro@ifb.edu.br  </p>
-	    	   <p> Telefone: <a href="tel:06121032129">  <span class="glyphicon glyphicon-earphone"></span>  2103-2130 </a></p>
-
-	    	</div>
-	    </div>
 	</div>    
-
 
 <div id= "mpInt"  class="col-md-12 col-sm-12 col-xs-12">
 	<div id= "mapaInterno">	
@@ -246,7 +213,7 @@
   <div class="container">
 	<div class="row">
 
-      	 <div class="text-center">Instituto Federal de Brasília - Núcleo de Técnologia da Informação e Comunicação (NTIC)
+      	 <div class="text-center">Instituto Federal de Brasília - Diretoria de Técnologia da Informação e Comunicação (DTIC)
   	 </div>
    </div>
   </div>
@@ -258,7 +225,7 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/ajax-utils.js"></script>
-  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js"></script>
   <script src="js/script.js"></script>
 
 </body>

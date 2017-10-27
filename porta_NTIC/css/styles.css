@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #557c3e; 
+  background-color: #195128; 
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -25,7 +25,7 @@ width: 150px;
 
 .navbar-brand h1 { /* IFB */
   font-family: 'Lora', serif;
-  color: #557c3e;
+  color: #195128;
   font-size: 1.4em;
   text-transform: uppercase;
   font-weight: bold;
@@ -51,7 +51,7 @@ width: 150px;
   margin-top: 10px;
 }
 #nav-list a {
-  color: #557c3e;
+  color: #195128;
   text-align: center;
 }
 #nav-list a:hover {
@@ -75,7 +75,7 @@ width: 150px;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #557c3e;
+  border: 1px solid #195128;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
@@ -103,7 +103,7 @@ width: 150px;
   font-size: 1.3em;
 }
 #address p {
-  color: #557c3e;
+  color: #195128;
   font-size: .8em;
   line-height: 1.8;
 }
@@ -153,12 +153,12 @@ width: 150px;
 #pessoas {
   background-color: #EEEEEE;
   border-radius: 25px;
-  color: #557c3e;
+  color: #195128;
   margin-bottom: 25px;
 }
 
 
-#mapid{
+#map{
   height: 250px;
 }
 
@@ -262,11 +262,11 @@ width: 150px;
   padding: 0;
   position: relative;
   overflow: hidden;
-  color:#557c3e;
+  color:#195128;
 }
 
 #text-tile a{
-  color: #557c3e;
+  color: #195128;
 
 }
 
@@ -314,7 +314,31 @@ width: 150px;
     font-size: 1.2em;
   }
 
-
+  #part-white{
+      background: rgb(255,255,255);
+      height: 360px;
+  }
+  #img-icon{
+      width: 150px;
+      height: 126px;
+      margin-top: 30px;
+      margin-left: 50px;
+  }
+  #number{
+      margin-top: 130px;
+  }
+  #number h5{
+      color:#3c763d; 
+      margin-left: 80px;
+      font-size: 50px;
+  }
+  #part-green{
+    background: rgb(0,255,0); 
+    height: 360px;
+  } 
+  #part-green h1{
+      font-size: 4.5em;
+  }
 
 }
 
@@ -350,7 +374,31 @@ width: 150px;
   font-size: 1.2em;
 }
 
-
+  #part-white{
+    background: rgb(255,255,255);
+    height: 280px;
+  }
+  #img-icon{
+    width: 126px;
+    height: 91px;
+    margin-top: 30px;
+    margin-left: 22px;
+  }
+  #number{
+    margin-top: 100px;
+  }
+  #number h5{
+    color:#3c763d; 
+    margin-left: 54px;
+    font-size: 36px;
+  }
+  #part-green{
+    background: rgb(0,255,0); 
+    height: 280px;
+  } 
+  #part-green h1{
+    font-size: 3.5em;
+  }
   /* End Home Page */
 }
 
@@ -397,7 +445,7 @@ width: 150px;
     padding: 10px;
     border: 2px solid #fff;
     background-color: #EEEEEE;
-    color: ##557c3e;
+    color: #195128;
     margin-bottom: 10px;
   }
 
@@ -433,6 +481,32 @@ width: 150px;
     height: 100%;
   }
 
+  #part-green h1 {
+    font-size: 1.5em;
+  }
+  #part-green {
+    background: rgb(0,255,0);
+    height: 150px;
+  }
+  #part-white {
+    background: rgb(255,255,255);
+    height: 150px;
+  }
+  #img-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: -3px;
+  }
+  #number {
+    margin-top: 40px;
+  }
+  #number h5 {
+    color: #3c763d;
+    margin-left: 16px;
+    font-size: 21px;
+  }
+
 
 }
 
@@ -460,6 +534,32 @@ width: 150px;
     float: left;
     width: 100%;
   }
+  /* Imagem da porta*/
+  #part-white{
+    background: rgb(255,255,255); 
+    height: 150px;
+  }
+  
+  #img-icon{
+    width: 55px; 
+    height: 49px; 
+    margin-top: 20px;
+  }
+  #number{
+    margin-top: 50px;
+  }
+  #number h5{
+    color:#3c763d; 
+    margin-left: 23px;
+  }
+  #part-green{
+    background: rgb(0,255,0); 
+    height: 150px;
+  }
+  #part-green h1{
+    font-size: 1.5em;
+  }
+  /*FIM*/
 }
 
 #img-tile span {
@@ -481,6 +581,42 @@ width: 150px;
   width: 90%;
 }
 */
+
+/*lista*/
+h1{
+    font-size:2.5em;
+}
+
+p{
+ font-weight:400;
+ font-size:1em;   
+}
+.img-quadrata {
+  border-radius:50%;
+  width: 110px;
+  height: 109px;
+}
+
+h3{
+      font-weight:800;
+        color:#f0ad4e;
+        font-size:1em;  
+}
+small{
+    text-align:center;
+        font-size:1.5em; 
+        color:gray;
+}
+h4, .h4 {
+    font-size: 10px;
+}
+/*Fim */
+/*.col-xs-12{
+    position: relative;
+    min-height: 1px;
+    padding-left: 1px;
+    padding-right: 35px;
+}*/
 
 
 

@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #557c3e; 
+  background-color: #195128; 
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 .navbar-brand h1 { /* IFB */
   font-family: 'Lora', serif;
-  color: #557c3e;
+  color: #195128;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
@@ -50,7 +50,7 @@ body {
   margin-top: 10px;
 }
 #nav-list a {
-  color: #557c3e;
+  color: #195128;
   text-align: center;
 }
 #nav-list a:hover {
@@ -74,7 +74,7 @@ body {
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #557c3e;
+  border: 1px solid #195128;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
@@ -100,7 +100,7 @@ body {
   font-size: 1.3em;
 }
 #address p {
-  color: #557c3e;
+  color: #195128;
   font-size: .8em;
   line-height: 1.8;
 }
@@ -140,7 +140,7 @@ body {
 
 }
 
-#mapid{
+#map{
   height: 250px;
 }
 
